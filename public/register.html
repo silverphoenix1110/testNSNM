@@ -91,6 +91,7 @@
 <script>
     console.log(navigator.userAgent)
     var userAgent = navigator.userAgent
+    console.log(userAgent.indexOf(['iPhone OS 9']))
     if (userAgent.indexOf(['iPhone OS 9']) !== -1){
         window.location = "oops.html";
     }
