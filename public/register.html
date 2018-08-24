@@ -584,8 +584,8 @@
                     }
                 }
                 var task = ref.child('vexere_campaign/photo/'+fileName).put(file, metadata);
-                task.then(snapshot => snapshot.ref.getDownloadURL())
-                .then((url) => {
+                task.then(function(snapshot){snapshot.ref.getDownloadURL()})
+                .then(function(url) {
                     var code = "NSNM"+firebaseUid;
                     data['identity_code'] = code;
                     data['photo'] = url;
@@ -596,7 +596,7 @@
                     data['shared_grab_id_fb'] = 0;
                     data['created'] = firebase.database.ServerValue.TIMESTAMP;
                     // save registration data
-                    firebase.database().ref('users/' + firebaseUid).set(data).then(() => {
+                    firebase.database().ref('users/' + firebaseUid).set(data).then(function(){
                         $("#share_code").html("#NhansuNhamay #"+code);
                         var share_message_arr = [
                             "Mong thần may mắn giúp mình có 120k vé xe đi chơi ahihi",
