@@ -185,7 +185,7 @@
                                     scope="public_profile,email"
                                     onlogin="checkLoginState();">
                                 </div> -->
-                                
+
                                 <button class="loginBtn loginBtn--facebook" id="loginFacebook">
                                     Login with Facebook
                                 </button>
@@ -419,7 +419,7 @@
     $("#loginFacebook").click(function(){
         FB.login(function(response) {
             if (response.authResponse) {
-                // access_token = response.authResponse.accessToken; 
+                // access_token = response.authResponse.accessToken;
                 $("#loading_page").show();
                 // statusChangeCallback(response);
                 // getUserFbInfo(response);
@@ -476,11 +476,11 @@
             scope: 'public_profile,email'
         });
     })
-    
+
     $("#declare_post_fb_btn").click(function(){
         var updates = {};
         updates['/users/' + firebaseUid + '/' + 'declare_post_fb'] = 1;
-        firebase.database().ref().update(updates).then(()=>{
+        firebase.database().ref().update(updates).then(function(){
             location.href="/"
         });
     });
@@ -614,7 +614,7 @@
             });
         }
         // return;
-        
+
         // console.log(activeStep); return;
         var widthLine = '';
         if (nextStep == 1) {
