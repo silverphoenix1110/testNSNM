@@ -1,0 +1,163 @@
+
+p {
+    font-size: 1.6rem;
+}
+form p {
+    font-size: 1.4rem;
+}
+.input-field label {
+    left: 1.5rem;
+    font-size: 1.4rem;
+}
+.input-field label.active {
+    font-size: 1rem;
+}
+input.form-control {
+    font-size: 1.6rem;
+    height: 4rem;
+    margin-bottom: 2rem;
+    /*background: #f0f0f0;*/
+}
+.btn.btn-default {
+    text-transform: none;
+    padding: 5px 22px;
+}
+.btn.btn-default:hover {
+    background: #db571a!important;
+}
+.btn.btn-default i.la {
+    color: white;
+    -webkit-transition: transform 100ms linear;
+    -moz-transition: transform 100ms linear;
+    -ms-transition: transform 100ms linear;
+    -o-transition: transform 100ms linear;
+    transition: transform 100ms linear;
+}
+.btn.btn-default:hover i.la {
+    -webkit-transform: translate(100%, 0);
+    -moz-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+    -o-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+    text-decoration: none;
+}
+
+.btn-floating.btn-small {
+    border-radius: 5rem;
+    background: #F2621C;
+    margin:0;
+    padding: 0;
+}
+.btn-floating:hover {
+    background: #db571a!important;
+}
+.btn-floating i {
+    font-size: 2.2rem;
+    line-height: 4.5rem;
+}
+.btn-floating:hover i {
+    text-decoration: none;
+}
+.btn-floating input[type="file"] {
+    top: 0;
+    left: 0;
+}
+
+/*Step progress*/
+.steps-progress {
+    position: relative;
+}
+
+.steps-line {
+    background: #ddd;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+.steps-line-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #F2621C;
+    height: 1px;
+}
+.steps-progress-number {
+    background: #ddd;
+    color: white;
+    height: 38px;
+    width: 38px;
+    line-height: 38px;
+    font-size: 1.8rem;
+    margin: 5px auto;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+}
+
+.steps-progress-icon span i {
+    color: white;
+}
+.steps-progress-icon span {
+    font-size: 2rem;
+}
+.steps-progress-st.active .steps-progress-icon span {
+    font-size: 3rem;
+}
+
+.steps-progress-st.active .steps-progress-number {
+    background: #F2621C;
+    height: 48px;
+    width: 48px;
+    line-height: 48px;
+    margin: 0 auto;
+    border: 1px solid #F2621C;
+}
+
+.steps-progress-st.activated .steps-progress-number {
+    background: white;
+    color: #F2621C;
+    border: 1px solid #F2621C;
+}
+
+.steps-progress-st.activated .steps-progress-icon span i {
+    color: #F2621C;
+}
+.steps-progress-st.activated .steps-progress-icon span {
+    font-size: 2rem;
+}
+.bg-clipboard {
+    background: #f8f9fa;
+    padding: 1.5rem 3rem;
+    position: relative;
+}
+.btn-clipboard {
+    background: #f8f9fa;
+    color: grey;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 0;*/
+    box-shadow: none;
+    text-transform: none;
+    margin: 10px 15px 0 0;
+    height: 2.8rem;
+    font-size: 1.6rem!important;
+}
+.btn-clipboard:active,
+.btn-clipboard:focus {
+    background: #f8f9fa;
+}
+.tooltip > .tooltip-inner {
+    border: 1px solid #222;
+    padding: 0.2rem 0.8rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+}
+.modal-footer .btn + .btn {
+    margin: 0;
+}
+
+.reg-steps [class*="col-xs-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
