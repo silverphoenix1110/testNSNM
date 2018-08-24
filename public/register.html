@@ -90,6 +90,10 @@
 <body>
 <script>
     console.log(navigator.userAgent)
+    var userAgent = navigator.userAgent
+    if (userAgent.indexOf(['iPhone OS 9']) !== -1){
+        window.location = "oops.html";
+    }
     window.fbAsyncInit = function() {
         FB.init({
             appId      : '193710201298406',
